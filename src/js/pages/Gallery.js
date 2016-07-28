@@ -52,8 +52,8 @@ class Gallery extends React.Component {
         return (
             <div className="gallery-wrap">
                 {/*<div>{this.props.params.pageid} gallery!</div>*/}
-                <div className="img-row">{this.state.galleryItems.slice(0, 3)}</div>
-                <div className="img-row">{this.state.galleryItems.slice(3)}</div>
+                <div className="img-row img-row-top-3">{this.state.galleryItems.slice(0, 3)}</div>
+                <div className="img-row img-row-rest">{this.state.galleryItems.slice(3)}</div>
             </div>
         );
     }
