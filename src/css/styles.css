@@ -1,0 +1,41 @@
+body {
+    padding: 20px;
+    background-color: beige;
+    font-size: 2em;
+    min-width: 1060px;
+    /*color: white;*/
+}
+
+.image-block {
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+}
+
+.highlight-1 {
+    border: 5px solid gold;
+}
+
+.highlight-2 {
+    border: 5px solid silver;
+}
+
+.highlight-3 {
+    border: 5px solid sandybrown;
+}
+
+.gallery-wrap {
+}
+
+.likesCounter {
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    color: #fff;
+    font-size: 2em;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.img-row {
+    text-align: center;
+}
