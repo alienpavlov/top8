@@ -9,7 +9,7 @@ export default class Footer extends React.Component {
     render() {
         return (
             <footer>
-                <h4>&copy; Alex Pavlov</h4>
+                <span className="label label-success">&copy; Alex Pavlov</span>
 
                 {/*<input className="form-control input-sm" value={this.props.text} onChange={this.handleChange.bind(this)} />*/}
                 {/*<span>{this.props.text}</span>*/}

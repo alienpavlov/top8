@@ -45,9 +45,18 @@ body {
     min-width: 500px;
 }
 
-.likesCounter {
+.likes-counter {
     position: absolute;
     left: 10px;
+    top: 0px;
+    color: #fff;
+    font-size: 2em;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.comments-counter {
+    position: absolute;
+    left: 120px;
     top: 0px;
     color: #fff;
     font-size: 2em;

@@ -7,12 +7,12 @@ export default class Image extends React.Component {
     }
 
     render() {
-        const {data} = this.props;
         const {i} = this.props;
-        const {link} = data;
+        const {link} = this.props;
         //for top3 use bigger images
-        const {url} = [1, 2, 3].includes(i) ? data.images.low_resolution : data.images.thumbnail;
-        const likesCount = data.likes.count;
+        const {url} = [1, 2, 3].includes(i) ? this.props.images.low_resolution : this.props.images.thumbnail;
+        const likesCount = this.props.likes.count;
+        const commentsCount = this.props.comments.count;
 
         const highlight = 'highlight-' + i;
         const css = `${highlight}`;
@@ -22,7 +22,8 @@ export default class Image extends React.Component {
                 <div className={css} onClick={this.clickHandler.bind(this)}>
                     <a href={link} target="_blank">
                         <img src={url} alt={likesCount + " likes!"}/>
-                        <span className="likesCounter">{likesCount}</span>
+                        <span className="likes-counter">{likesCount}&hearts;</span>
+                        <span className="comments-counter">{commentsCount}&copy;</span>
                     </a>
                 </div>
             </div>
