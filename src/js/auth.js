@@ -1,3 +1,16 @@
+const pretendRequest = (accessToken, cb) => {
+    setTimeout(() => {
+        if (accessToken && typeof accessToken === "string") {
+            cb({
+                authenticated: true,
+                token: accessToken
+            });
+        } else {
+            cb({authenticated: false});
+        }
+    }, 0);
+};
+
 module.exports = {
     login(accessToken, cb) {
         cb = arguments[arguments.length - 1];
@@ -43,16 +56,3 @@ module.exports = {
     onChange() {
     }
 };
-
-function pretendRequest(accessToken, cb) {
-    setTimeout(() => {
-        if (accessToken && typeof accessToken === "string") {
-            cb({
-                authenticated: true,
-                token: accessToken
-            });
-        } else {
-            cb({authenticated: false});
-        }
-    }, 0);
-}

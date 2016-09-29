@@ -1,7 +1,7 @@
 {
   "name": "top8",
   "version": "0.1.2",
-  "description": "DESCR!",
+  "description": "See your top 8 of most liked instagram photos",
   "main": "app.js",
   "dependencies": {
     "history": "^3.0.0",

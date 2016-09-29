@@ -38,3 +38,7 @@ jspm_packages
 
 # Webstorm
 .idea
+
+# Webpack compiled files
+/public/index.js
+/public/index.js.map

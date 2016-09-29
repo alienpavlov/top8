@@ -11,14 +11,14 @@ import AuthPage from './pages/Auth';
 import Gallery from './pages/Gallery';
 import auth from './auth';
 
-function requireAuth(nextState, replace) {
+const requireAuth = (nextState, replace) => {
     if (!auth.loggedIn()) {
         replace({
             pathname: '/login',
             state: {nextPathname: nextState.location.pathname}
         });
     }
-}
+};
 
 ReactDOM.render(
     <Router history={browserHistory}>
